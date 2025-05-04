@@ -31,7 +31,7 @@ function App() {
       const rendomWord = letterArr[Math.floor(Math.random()*letterArr.length)]
       setAnsWord(rendomWord.toUpperCase())
       const randomHints = [];
-      while (randomHints.length < 20) {
+      while (randomHints.length < 6) {
         const hintWord = letterArr[Math.floor(Math.random() * letterArr.length)];
         if (!randomHints.includes(hintWord) && hintWord !== rendomWord) {
           randomHints.push(hintWord.toUpperCase());
