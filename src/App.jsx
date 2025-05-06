@@ -86,21 +86,22 @@ function App() {
 
  useEffect(() => {
     if (guesses[currentRow - 1] === ansWord && ansWord) {
-      setGameStatus("You Won!");
-      ref.current.openModal();
+      setGameStatus("You Won!")
+      setTimeout(()=>{ref.current.openModal()},1000)
     } else if (currentRow > 5) {
-      setGameStatus("You Lost!");
-      ref.current.openModal();
+      setGameStatus("You Lost!")
+      setTimeout(()=>{ref.current.openModal()},1000)
+
     }
-  }, [currentRow, guesses, ansWord]);
+  }, [currentRow, guesses, ansWord])
 
   const handleGameReset = () => {
     fetchData()
-    setGuesses(new Array(rows).fill(""));
-    setCurrentRow(0);
-    setCurrentWord("");
-    setLetters("");
-    setGameStatus("");
+    setGuesses(new Array(rows).fill(""))
+    setCurrentRow(0)
+    setCurrentWord("")
+    setLetters("")
+    setGameStatus("")
   };  
   
 
