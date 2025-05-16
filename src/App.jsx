@@ -122,7 +122,12 @@ function App() {
         currentWord={currentWord} 
         ansWord={ansWord}
       />
-      <Keyboard letters={letters} ansWord={ansWord} guesses={guesses} />
+      <Keyboard 
+      letters={letters} 
+      ansWord={ansWord} 
+      guesses={guesses}
+       onKeyPress={hendelKeyEvent}
+       />
       <Modal
         gameStatus={gameStatus}
         ref={ref}
