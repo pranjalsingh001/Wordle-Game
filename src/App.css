@@ -19,7 +19,7 @@ h1{
     text-align: center;
 }
 .board{
-    margin-top: 20px;
+    margin-top:20px;
     display: flex;
     flex-direction:column ;
     justify-content: center;
@@ -137,6 +137,7 @@ h1{
   }
 
   .hints {
+    margin-top: 20px;
     text-align: center;
     color: white;
     display: flex;
@@ -155,31 +156,31 @@ h1{
   
   @media (max-width: 768px) {
   .keyboard {
-    margin-top: 20px;
+    margin-top: 10rem;
     padding: 0 10px;
   }
 
   .keyboardRow {
     gap: 2px;
-    margin: 3px 0;
   }
 
   .keyboardLetter {
-    padding: 8px 0;
+    padding: 10px 0;
     min-width: 7vw;
     height: 10vw;
     font-size: 14px;
     border-radius: 3px;
+    margin-left: 10px;
   }
 
   .boardCells {
-    width: 2rem;
-    height: 2rem;
+    width: 2.5rem;
+    height: 2.5rem;
     font-size: 1.2rem;
   }
 
   h1 {
-    font-size: 1.8rem;
+    font-size: 3rem;
   }
 
   .modal {
